@@ -5,19 +5,27 @@
     font-size: 15px;
 }
 
-main {
-    width: 60%;
-    margin: .5rem auto;
-    padding: 15%;
-    border: 1px solid #3e3744;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px #3a3939;
+h1.titre {
+    height: auto;
+    width: auto;
+    font-size: 60px;
+    border: solid 10px ;
+    border-style:groove;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: auto;
+    background-color: azure;
+    text-align: center;
 }
-
-.ma-class {
+form {
+    background-color: azure; 
+   
+}
+.fieldset {
+   
     border: 1px solid #3e3744;
-    border-radius: 10px;
-    padding: 10px;
+    background-color: azure;
+   
+    
 }
 #mon_id { 
     background-color: rgb(206, 84, 50);
