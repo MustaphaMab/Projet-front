@@ -1,36 +1,38 @@
 * {
     box-sizing: border-box;
-    margin: 0%;
-    padding: 0%;
-    font-size: 15px;
+  
 }
+body {
+    background-image: url(../img/fond-ecran.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+main {
+   
+   margin: 10%;
+   
+     }
 
+.fieldset {
+
+    background-color:azure;
+    padding: 1%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.submitConnection {
+    text-align: center;
+}
 h1.titre {
     height: auto;
     width: auto;
-    font-size: 60px;
-    border: solid 10px ;
-    border-style:groove;
+    font-size: 250%;
+    font-style: italic;
+    color: rgb(20, 11, 136);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: auto;
-    background-color: azure;
     text-align: center;
-}
-form {
-    background-color: azure; 
-   
-}
-.fieldset {
-   
-    border: 1px solid #3e3744;
-    background-color: azure;
-   
-    
-}
-#mon_id { 
-    background-color: rgb(206, 84, 50);
+    padding: 5%;
 }
 
-.espace {
-    margin-bottom: 10px;
-}
