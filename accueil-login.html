@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script type="module" src="./assets/js/script.js" defer></script>
+    <script type="module" src="./assets/js/script-accueil.js" defer></script>
     <title>RESTAURANT "Chez MOI"</title>
 </head>
 <body>
@@ -19,12 +19,13 @@
                     <legend>Identification</legend>
                     
                              <h2>Vous avez déja un compte? </h2><br>
-                            
-                             <label>Identfiant : <input type="text" name="" id="nameAccueilConnexion" ></label><br>
+                                    <div class="identificationFieldset">
+                                            <label>Identfiant : <input type="text" name="identifiant" id="nameAccueilConnexion" ></label><br>
 
-                             <label>Mot de passe : <input type="password" name="mot-de-passe" id="mdpAccueilConnexion"></label>
+                                            <label>Mot de passe : <input type="password" name="mot-de-passe" id="mdpAccueilConnexion"></label>
 
-                             <label><input  type="submit" value="Connecter"></label><br>
+                                           <input  type="submit">
+                                    </div>
                             <b>Pas encore de compte ?</b>
                     <a href="inscription.html">inscription</a> 
                 </fieldset>
