@@ -23,20 +23,88 @@ h1.titre {
     color: rgb(20, 11, 136);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    padding: 5%;
+    padding: 4%;
 }
 
 .fieldset {
 
-    background-color:azure;
+    background-color:rgba(240, 255, 255, 0.521);
     padding: 1%;
     height: auto;
     display: flex;
     justify-content: space-between;
+    border-radius: 3%;
     
 }
 .submitConnection {
     text-align: center;
 }
 
+.horaires {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(240, 255, 255, 0.584);
+    margin-top: 50%;
+    width: auto;
+    font-style: italic;
+    font-weight:bold;
+    border-radius: 3%;
+    
+}
+/* ************************* MENU BURGER***************************** */
 
+/* Sidenav menu */
+.menuBurger {
+    height: 100%;                                   
+    width: auto;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: left 1s ease;
+  }
+  
+  /* Sidenav menu links */
+  .menuBurger a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 1s;
+  }
+  
+  .menuBurger a:hover {
+    color: #111;
+  }
+  
+  .menuBurger ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Active class */
+  .menuBurger.active {
+    left: 0;
+  }
+  
+  /* Close btn */
+  .menuBurger .close {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    font-size: 100px;
+  }
+  
+  /* Icône burger */
+  .IconeBurger span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+  

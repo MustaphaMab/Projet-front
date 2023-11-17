@@ -8,23 +8,41 @@
     <title>Inscription</title>
 </head>
         <body>
-                <h1 class="titreInscription">Page d'inscription</h1>
+                
+
                 <form class="inscriptionHtml">
-                        NOM : <input type="text" name="nom"  required="required" id="nomInscription">
-  
-                        Prénom : <input type="text" name="prenom" required="required" id="prenomInscription">
+                       
+                        <h1 class="titreInscription">Page d'inscription</h1>
+                       
+                        <section>
+                                       
+                                        <ul>
+                                                <li>       
+                                                        <label>Nom : <input type="text" name="nom"  required="required" id="nomInscription"></label>
+                                                </li>
+                                                <li>
+                                                        <label>Prénom : <input type="text" name="prenom" required="required" id="prenomInscription"></label>
+                                                </li>
+                                                <li>
+                                                        <label>Mot de passe : <input type="text" name="mot-de-passe" required="required" id="motDePasseInscription"></label>
+                                                </li>
+                                                <li>
+                                                        <label>Confirmez votre mot de passe : <input type="text" name="mot-de-passe-bis" required="required" id="motDePasseBisInscription"></label>
+                                                </li>
+                                                <li>
+                                                        Date de naissance : <input type="date" name="dateNaissance" required="required" id="dateNaissanceInscription">
+                                                </li>
+                                                <li>
+                                                        Numéro de téléphone : <input type="number" name="NumTelInscription" required="required" id="NumTelInscription">
+                                                </li>   
+                                        </ul>  
+                        </section>
 
-                        Mot de passe : <input type="text" name="mot-de-passe" required="required" id="motDePasseInscription">
-
-                        Confirmer votre mot de passe : <input type="text" name="mot-de-passe-bis" required="required" id="motDePasseBisInscription">
-
-                        Date de naissance : <input type="date" name="dateNaissance" required="required" id="dateNaissanceInscription"><br>
-
-                        Numéro de téléphone : <input type="number" name="NumTelInscription" required="required" id="NumTelInscription">
-
-                        <input type="submit"><br>
-
-                        <a href="./accueil-login.html">Retour à la page d'accueil</a> 
+                        <section>   
+                                        <input type="submit"><br><br>
+                        </section> 
+                        
+                        <a href="./accueil-login.html">Retour à la page d'accueil</a>
                 </form>
                 
         </body>
