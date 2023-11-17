@@ -1,33 +1,49 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".\assets\css\style.css">
-    <title>Document</title>
+    <script type="module" src="./assets/js/script-inscription.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/style-inscription.css">
+    <title>Inscription</title>
 </head>
-<body>
-   <main>
-    <center> <img src="assets\img\logo-afpa.jpg" alt="afpa" width=50% height=10% />
-</center>
-    <center><h1>BIENVENUE SUR L'APPLICATION AFPA</h1></center>
-    
-    <form method="GET" action="userDetails.html">
-        <fieldset class="ma-class">
-        <label  for="">
-            <center><h2>Vous avez déja un compte ? </h2>
-            <h2>Connectez-vous </h2></center>
-            <p class="espace"> Identfiant : <input type="text" name="" id="" placeholder=""> </p>
-        </label>
-        <label for="">
-           <p>Mot de passe : <input type="text" name="" id="" placeholder=""></p>
-        </label>
-        <center><p><input type="submit" value="Connecter"> </p></center>
-    </fieldset>
-    <center><b>Pas encore de compte ?</b> <br>
-    <a href="inscription.html">inscription</a></center>
-    </form>
-</main>
-</body>
+        <body>
+                
+
+                <form class="inscriptionHtml">
+                       
+                        <h1 class="titreInscription">Page d'inscription</h1>
+                       
+                        <section>
+                                       
+                                        <ul>
+                                                <li>       
+                                                        <label>Nom : <input type="text" name="nom"  required="required" id="nomInscription"></label>
+                                                </li>
+                                                <li>
+                                                        <label>Prénom : <input type="text" name="prenom" required="required" id="prenomInscription"></label>
+                                                </li>
+                                                <li>
+                                                        <label>Mot de passe : <input type="text" name="mot-de-passe" required="required" id="motDePasseInscription"></label>
+                                                </li>
+                                                <li>
+                                                        <label>Confirmez votre mot de passe : <input type="text" name="mot-de-passe-bis" required="required" id="motDePasseBisInscription"></label>
+                                                </li>
+                                                <li>
+                                                        Date de naissance : <input type="date" name="dateNaissance" required="required" id="dateNaissanceInscription">
+                                                </li>
+                                                <li>
+                                                        Numéro de téléphone : <input type="number" name="NumTelInscription" required="required" id="NumTelInscription">
+                                                </li>   
+                                        </ul>  
+                        </section>
+
+                        <section>   
+                                        <input type="submit"><br><br>
+                        </section> 
+                        
+                        <a href="./accueil-login.html">Retour à la page d'accueil</a>
+                </form>
+                
+        </body>
 </html>
