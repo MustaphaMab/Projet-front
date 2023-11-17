@@ -4,27 +4,17 @@
 }
 body {
     background-image: url(../img/fond-ecran.jpg);
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
+    
     
 }
 main {
    
-   margin: 10%;
+   margin: 2%;
    
      }
 
-.fieldset {
-
-    background-color:azure;
-    padding: 1%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-}
-.submitConnection {
-    text-align: center;
-}
 h1.titre {
     height: auto;
     width: auto;
@@ -35,4 +25,18 @@ h1.titre {
     text-align: center;
     padding: 5%;
 }
+
+.fieldset {
+
+    background-color:azure;
+    padding: 1%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.submitConnection {
+    text-align: center;
+}
+
 

@@ -26,8 +26,6 @@ form.addEventListener("submit", function (event){
     objectDataForm = Object.fromEntries(formData);
     console.log(objectDataForm);
     postBinContent();
-
-    
     
 });
 

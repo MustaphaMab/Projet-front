@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="./assets/js/script-inscription.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/style-inscription.css">
     <title>Inscription</title>
 </head>
         <body>
-                <form>
-                        NOM : <input type="text" name="nom" id="nomInscription">
+                <h1 class="titreInscription">Page d'inscription</h1>
+                <form class="inscriptionHtml">
+                        NOM : <input type="text" name="nom"  required="required" id="nomInscription">
   
-                        Prénom : <input type="text" name="prenom" id="prenomInscription">
+                        Prénom : <input type="text" name="prenom" required="required" id="prenomInscription">
 
-                        Mot de passe : <input type="text" name="mot-de-passe" id="motDePasseInscription">
+                        Mot de passe : <input type="text" name="mot-de-passe" required="required" id="motDePasseInscription">
 
-                        Confirmer votre mot de passe : <input type="text" name="mot-de-passe-bis" id="motDePasseBisInscription">
+                        Confirmer votre mot de passe : <input type="text" name="mot-de-passe-bis" required="required" id="motDePasseBisInscription">
 
-                        Date de naissance : <input type="date" name="dateNaissance" id="dateNaissanceInscription">
+                        Date de naissance : <input type="date" name="dateNaissance" required="required" id="dateNaissanceInscription"><br>
 
-                        Numéro de téléphone : <input type="number" name="NumTelInscription" id="NumTelInscription">
+                        Numéro de téléphone : <input type="number" name="NumTelInscription" required="required" id="NumTelInscription">
 
-                        <input type="submit">
+                        <input type="submit"><br>
 
                         <a href="./accueil-login.html">Retour à la page d'accueil</a> 
                 </form>

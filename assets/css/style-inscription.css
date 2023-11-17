@@ -1,4 +1,31 @@
 *{
     box-sizing: border-box;
+
 }
+
+body {
+    background-image: url(../img/fond-ecran-inscription.jpg);
+    background-repeat: no-repeat;
+    
+}
+.titreInscription {
+
+text-align: center;
+
+
+}
+
+
+.inscriptionHtml {
+width: 52%;
+border: 1px solid azure;
+background-color: azure;
+border-radius: 5%;
+text-align: center;
+padding: auto;
+margin: auto;
+margin-top: 80%;
+border: 2px solid red;
+}
+
 

@@ -4,33 +4,45 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style-accueil.css">
     <script type="module" src="./assets/js/script-accueil.js" defer></script>
     <title>RESTAURANT "Chez MOI"</title>
 </head>
 <body>
-   <main >
+    <header>
+
+    </header>
+
+    <nav>
+
+    </nav>
+
+    <main>
         <h1 class="titre">Restaurant "Chez MOI"</h1>
     
-        <div id="horloge"></div>
-    <form>
-            <div class="fieldset">
-                <fieldset> 
-                    <legend>Identification</legend>
-                    
-                             <h2>Vous avez déja un compte? </h2><br>
-                                    <div class="identificationFieldset">
-                                            <label>Identfiant : <input type="text" name="identifiant" id="nameAccueilConnexion" ></label><br>
+                <form>
+                        <div class="fieldset">
+                            <fieldset> 
+                                <legend>Identification</legend>
+                                
+                                        <h2>Vous avez déja un compte? </h2><br>
+                                                <div class="identificationFieldset">
+                                                        <label>Identfiant : <input type="text" name="identifiant" required="required" id="nameAccueilConnexion" ></label><br>
 
-                                            <label>Mot de passe : <input type="password" name="mot-de-passe" id="mdpAccueilConnexion"></label>
+                                                        <label>Mot de passe : <input type="password" name="mot-de-passe" required="required" id="mdpAccueilConnexion"></label>
 
-                                           <input  type="submit">
-                                    </div>
-                            <b>Pas encore de compte ?</b>
-                    <a href="inscription.html">inscription</a> 
-                </fieldset>
-            </div>
-    </form>
-</main>
+                                                    <input class="submit" type="submit">
+                                                </div>
+                                        <b>Pas encore de compte ?</b>
+                                <a href="inscription.html">inscription</a> 
+                            </fieldset>
+                        </div>
+                </form>
+    </main>
+
+    <footer>
+
+    </footer>
+    
 </body>
 </html>
