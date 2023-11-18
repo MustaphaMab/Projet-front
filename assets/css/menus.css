@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+
+}
+
+.adresse {
+
+    display: flex;
+    justify-content:space-around;
+    background-color: rgba(240, 255, 255, 0.584);
+    margin-top: 5%;
+    width: auto;
+    font-style: italic;
+    font-weight:bold;
+    border-radius: 3%;
+}   
