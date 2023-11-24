@@ -1,4 +1,4 @@
-console.log("test");
+console.log("test accueil");
 
 
 var menuBtn = document.querySelector('.menu-btn');

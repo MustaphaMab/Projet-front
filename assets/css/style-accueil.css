@@ -4,7 +4,7 @@
 }
 body {
     background-image: url(../img/fond-ecran.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;   
 }
 main {
@@ -32,7 +32,7 @@ h1.titre {
     border-radius: 3%;
     
 }
-.submitConnection {
+.submit {
     text-align: center;
 }
 
@@ -71,9 +71,9 @@ nav.nav-open {
 }
 
 nav .menu-btn {
-  position: absolute;
-  top: 5%;
-  right: 15%;
+  position:absolute;
+  top: 1%;
+  right: 3% ;
   padding: 0;
   width: 40px;
     
@@ -82,7 +82,7 @@ nav .menu-btn {
 
 nav .menu-btn .line {
   padding: 0;
-  width: 30px;
+  width: 25px;
   background: #fff;
   height: 2px;
   margin: 5px 0;
@@ -168,3 +168,14 @@ footer {
     font-weight: bold;
   }
   
+  @media screen and (min-width: 768px) and (max-width : 991px) and (orientation : portrait) {
+    section {
+    display: none;
+     }
+    main{
+        display: none;
+    } 
+ }
+
+ /* ********************************************************* VERSION TABELTTE  ********************************************************/
+

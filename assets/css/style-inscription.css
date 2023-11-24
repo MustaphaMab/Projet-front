@@ -4,10 +4,11 @@
 }
 
 body {
-    background-image: url(../img/fond-ecran-inscription.jpg);
+    background-image: url(../img/fond-userDetail.jpg);
     background-repeat: no-repeat;
+    /* background-size: cover; */
     
-}
+} 
 .titreInscription {
 
 text-align: center;
@@ -28,13 +29,26 @@ width: 95%;
 border: 1px solid azure;
 border-radius: 5%;
 background-color: rgba(240, 255, 255, 0.693);
-
-border-radius: 5%;
 text-align: center;
-padding: auto;
+padding: 2%;
 margin: auto;
-margin-top: 80%;
+margin-top: 40%;
 
 }
+
+.erreurMdp {
+
+    color: red
+}
+
+
+@media screen and (min-width: 768px) and (max-width : 991px) and (orientation : portrait) {
+    /* section {
+    /* display: none;
+     }
+    main{
+        display: none;
+    }  */
+ } 
 
 
