@@ -1,206 +1,202 @@
 *{
     box-sizing: border-box;
+    margin : 0;
   
 }
 body{
-    background-image: url(../img/fond-ecran.jpg);
+    background-color:azure;
     background-size: cover;
     background-repeat: no-repeat;   
+}
+.barre-header{
+  display: flex;
+  justify-content:flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  overflow: visible;
+  background-color: rgb(79, 121, 121);
+  position: fixed;
+  z-index: 100;
 }
 
 /* ********** IMAGES FONDU ENCHAINEE ****************************/
 
 .d1{
-  width: 100%;
-  height: 60px;
-  margin: 50px auto;
+  width: auto;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  margin: 0%; 
+  background-repeat: no-repeat;
   box-shadow: 0px 15px 10px -5px #777;
-  background-color: #EDEDED;
-  background-size: contain;
+ 
+  background-size:cover;
   animation: fondu 15s ease-in-out infinite both;
+ 
 }
 
 
 @keyframes fondu{
-  0%{background-image: url("https://www.pierre-giraud.com/wp-content/uploads/2019/07/diapo1.png");}
-  33.33%{background-image: url("https://www.pierre-giraud.com/wp-content/uploads/2019/07/diapo2.png");}
-  66.67%{background-image: url("https://www.pierre-giraud.com/wp-content/uploads/2019/07/diapo3.png");}
-  100%{background-image: url("https://www.pierre-giraud.com/wp-content/uploads/2019/07/diapo1.png");}
+  0%{background-image: url("../img/diapo-bouillabaisse.jpg");}
+  33.33%{background-image: url("../img/diapo-soupePistou.jpg");}
+  66.67%{background-image: url("../img/diapo-tapenade.jpg");}
+  100%{background-image: url("../img/diapo-dessert.jpg");}
 }
 
 /* ****************************************************************** */
 main {
-   margin: 2%; 
+   margin: 0%; 
      }
   
-.diaporama{
-width: 100%;
-height: 100%;
-margin: auto;
-box-shadow: 0px 15px;
-background-color: azure;
-background-size: contain;
-animation:ease-in-out infinite both;
-}
-
 h1.titre{
     height: auto;
     width: auto;
     font-size: 250%;
-    font-style: italic;
-    color: rgb(20, 11, 136);
+    font-style:normal;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    padding-bottom: 4%;
-}
+    padding: 4%;
+    background: linear-gradient(to right, #36ecde, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
 .fieldset{
 
-    background-color:rgba(240, 255, 255, 0.521);
-    padding: 1%;
+    background-color:rgba(248, 251, 251, 0.521);
+    padding: 0%;
     height: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     border-radius: 3%;
     
 }
 .submit{
     text-align: center;
 }
+.horaire-adresse {
 
-.horaires{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(240, 255, 255, 0.584);
-    margin-top: 15%;
-    width: auto;
-    font-style: italic;
-    font-weight:bold;
-    border-radius: 3%;
-    
-}
-/* ***************************************************************************** MENU BURGER***************************** */
-
-.burger{
-  height:50%;
-  width: 100%;
-}
-
-nav{
-  overflow: hidden;
-  position: fixed;
-  transform: translateX(-300px);
-  height: 100%;
-  width: 400px;
-  transition: all 800ms cubic-bezier(.8, 0, .33, 1);
-  border-radius: 0% 0% 100% 50%;
-}
-
-nav.nav-open{
-  transform: translateX(0px);
-  border-radius: 0% 0% 0% 0%;
- background: rgba(255, 255, 255, 0.6);
-}
-
-nav .menu-btn{
-  position:absolute;
-  top: 1%;
-  right: 3% ;
-  padding: 0;
-  width: 40px;
-    
-  z-index: 2;
-}
-
-nav .menu-btn .line{
-  padding: 0;
-  width: 25px;
-  background: #fff;
-  height: 2px;
-  margin: 5px 0;
-  transition: all 700ms cubic-bezier(.9, 0, .33, 1);
-}
-
-nav .menu-btn .line.line--1{
-  width: 30px;
-  transform: rotate(0) translateY(0);
-}
-
-nav .menu-btn .line.line--1.line-cross {
-  width: 30px;
-  transform: rotate(45deg) translateY(10px);
- background: rgba(0,0,0,0.6);
-}
-
-nav .menu-btn .line.line--2 {
-  width: 28px;
-  transform: translateX(0);
-}
-
-nav .menu-btn .line.line--2.line-fade-out {
-  width: 28px;
-  transform: translate(30px);
-  opacity: 0;
-}
-
-nav .menu-btn .line.line--3 {
-  width: 20px;
-  transform: rotate(0) translateY(0);
-}
-
-nav .menu-btn .line.line--3.line-cross {
-  width: 30px;
-  transform: rotate(-45deg) translateY(-10px);
- background: rgba(0,0,0,0.6);
-}
-
-nav .nav-links {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
+  
+}
+.horaires{
+   
+    display: flex;
+    justify-content:space-around ;
+    height: 10%;
+    font-size: 10px;
+    font-style: italic;
+    padding-bottom: 4%;
+    color: #000;
+}
+.adresse {
+  display: flex;
+  justify-content:space-around;
+  height: 10%;
+  font-size: 10px;
+  font-style: italic;
+  padding-bottom: 4%;
+  color: #000;
+}
+
+/* **** début MENU BURGER***************************** */
+
+/* Réinitialiser les marges, les espacements et définir box-sizing sur tous les éléments */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Configuration de la barre de navigation */
+nav {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  transform: translateX(-100px);
-  opacity: 0;
-  transition: all 900ms cubic-bezier(.9, 0, .33, 1);
+  min-height: 8vh;
+  background-color: #6750ec7e;
+  font-family: 'Poppins', sans-serif;
 }
 
-nav .nav-links.fade-in {
-  opacity: 1;
-  transform: translateX(0px);
+
+
+/* Cacher l'input de type checkbox */
+input[type=checkbox] {
+  display: none;
 }
 
-nav .nav-links .link {
-  margin: 20px 0;
+/* Configuration des liens de la barre de navigation */
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
   text-decoration: none;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: rgb(20, 11, 136);
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  transition: all 300ms cubic-bezier(.9, 0, .33, 1);
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
 }
 
-nav .nav-links .link:hover {
-  color: rgba(11, 11, 11, 0.5)
+/* Configuration de l'icône burger */
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(8, 8, 9);
+  margin: 5px;
+  border-radius: 3px;
 }
 
-a:hover{
-color: rgb(2, 2, 2);
+/* Cacher l'icône burger sur les écrans d'ordinateur */
+.burger {
+  display: none;
 }
 
-/* ************************************************************** FOOTER ******************************************************************************* */
+/* Styles spécifiques pour les écrans mobiles (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  /* Cacher les liens de la barre de navigation sur les écrans mobiles */
+  .nav-links {
+      display: none;
+  }
+
+  /* Afficher l'icône burger sur les écrans mobiles */
+  .burger {
+      display: block;
+      cursor: pointer;
+  }
+
+  /* Afficher les liens de la barre de navigation lorsque la case est cochée sur les écrans mobiles */
+  input[type=checkbox]:checked ~ .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      background-color: #333;
+      width: 50%;
+      height: 92vh;
+  }
+}
+/* *********Fin menu BURGER ********************************************/
+
+/* **************************************************************  début FOOTER ******************************************************************************* */
 footer {
     text-align: center;
     background-color: rgba(240, 255, 255, 0.473);
     font-weight: bold;
+    margin-top: 50%;
   }
   
-  @media screen and (min-width: 768px) and (max-width : 991px) and (orientation : portrait) {
+  @media screen and (max-width: 319px)  and (orientation : portrait) {
     section {
     display: none;
      }
