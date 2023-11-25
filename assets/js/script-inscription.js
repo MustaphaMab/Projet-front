@@ -1,4 +1,4 @@
-console.log("test123");
+console.log("inscription");
 
 const keySecret = "$2a$10$HmGN6CC2dTwDcjw.3uGoGOBERN2BG/kqmmwIhiaB4mMnROa8wQlSy";
 const APIURL = "https://api.jsonbin.io/v3";
@@ -16,6 +16,11 @@ async function postBinContent() {
         },
         body: JSON.stringify(objectDataForm)
     });
+if (!res.ok){
+    throw new Error(`Erreur HTTP: ${res.status}`);
+}
+// Le reste du code si la requete est réussi
+
 }
 
 let form = document.querySelector("form");
@@ -32,10 +37,13 @@ form.addEventListener("submit", function (event){
 function verificationMotDePasse() {
      let motDepasse1 = document.getElementById("motDePasseInscription").value;
      let motDepasse2 = document.getElementById("motDePasseBisInscription").value;
-            if (motDepasse1 === motDepasse2){
-                alert("ok!")
+          
+     let messageErreur = document.getElementById("messageErreur");
+
+     if (motDepasse1 === motDepasse2){
+                messageErreur.innerHTML = "";
             } else {
-                alert("vos mos de passe ne ont pas identiques")
+                messageErreur.innerHTML = "Vos mos de passe ne ont pas identiques";
 
             }
         

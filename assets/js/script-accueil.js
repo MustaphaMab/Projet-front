@@ -1,19 +1,5 @@
-console.log("test");
+console.log("test accueil");
 
-
-var menuBtn = document.querySelector('.menu-btn');
-var nav = document.querySelector('nav');
-var lineOne = document.querySelector('nav .menu-btn .line--1');
-var lineTwo = document.querySelector('nav .menu-btn .line--2');
-var lineThree = document.querySelector('nav .menu-btn .line--3');
-var link = document.querySelector('nav .nav-links');
-menuBtn.addEventListener('click', () => {
-    nav.classList.toggle('nav-open');
-    lineOne.classList.toggle('line-cross');
-    lineTwo.classList.toggle('line-fade-out');
-    lineThree.classList.toggle('line-cross');
-    link.classList.toggle('fade-in');
-})
 
 const secretKey = "$2a$10$HmGN6CC2dTwDcjw.3uGoGOBERN2BG/kqmmwIhiaB4mMnROa8wQlSy";
 const URLAPI = "https://api.jsonbin.io/v3";
@@ -90,18 +76,3 @@ console.log(tableau);
 
 // **************************************************** MENU BURGER ***************************************************************
 
-
-let menuBurgerId1 = document.getElementById("menuBurgerId");
-let ouvertureBtn1 = document.getElementById("ouvertureBtn");
-let close1 = document.getElementById("close");
-
-ouvertureBtn1.addEventListener("click", openNav);
-close1.addEventListener("click", closeNav);
-
-function openNav() {
-    menuBurgerId1.classList.add("active");
-}
-
-function closeNav() {
-    menuBurgerId1.classList.remove("active");
-}

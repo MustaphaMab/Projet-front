@@ -7,89 +7,77 @@
     <link rel="stylesheet" href="./assets/css/style-accueil.css">
     <script type="module" src="./assets/js/script-accueil.js" defer></script>
     <link rel="stylesheet" href="./assets/css/menus.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     
     <title>RESTAURANT "Chez MOI"</title>
 </head>
 <body>
-    <header>
-<nav class="burger">
-            <div class="menu-btn">
-                <div class="line line--1"></div>
-                <div class="line line--2"></div>
-                <div class="line line--3"></div>
-            </div>
-        
-            <div class="nav-links">
-                <a href="" class="link">Home</a>
-                <a href="" class="link">Contact</a>
-                <a href="" class="link">Profile</a>
-                <a href="" class="link">About</a>
-            </div>
-        </nav>
+    <!-- début menu burger *********************************************************** -->
+   
+    <nav>
+                <div class="logo">
+                         <img  width="60px" src="./assets/img/logo.png" alt="Marseille">
+                </div>
+                <h1 class="titre">"Chez MOI"</h1> 
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="burger">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                </label>
+                <ul class="nav-links">
+                    <li><a href="./menus.html">Carte</a></li>
+                    <li><a href="#">Galeries</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+    </nav>
+
+<!-- fin menu burger *********************************************************** -->
     
+<main>
 
-                <a href="#" id="ouvertureBtn">
-                        <span class="IconeBurger">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                        </span>
-                </a>
-        </nav>
-    </header>
+                
+                <!--*** images en fondu enchainé -->
+            <div class="d1"></div> <br>
+             <div class="horaire-adresse">
 
-    
- 
-        <main>
-        <h1 class="titre">Restaurant "Chez MOI"</h1>
-    
-                <form>
-                        <div class="fieldset">
-                            <fieldset> 
-                                        <h2>Vous avez déja un compte? </h2>
-                                                <div class="identificationFieldset">
-                                                        <label>Identfiant : <input type="text" name="identifiant" required="required" id="nameAccueilConnexion" ></label><br>
-
-                                                        <label>Mot de passe : <input type="password" name="mot-de-passe" required="required" id="mdpAccueilConnexion"></label>
-
-                                                    <input class="submit" type="submit">
-                                                </div>
-                                        <p><b>Pas encore de compte ?</b>
-                                <a href="inscription.html">inscription</a></p> 
-                            </fieldset>
-                        </div>
-                </form>
                 <div class="horaires">
-                    <h2>Horaires d'ouvertures</h2>
+                                <h2>Lundi au Samedi :  11h - 23h</h2>
+                </div> 
+
+                <div class="adresse" >    
+                                <h2>54 Boulevard Laveran 13014 Marseille</h2>
+                </div>
+    </div>        
+ <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2902.3181837856255!2d5.411661075862079!3d43.328530473369604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9bf97c6a188b5%3A0x26144d7cd0241160!2sAFPA%20-%20Centre%20de%20Marseille%2F%20Saint-J%C3%A9r%C3%B4me!5e0!3m2!1sfr!2sfr!4v1700950615819!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         
+    
+
+       <center>   <h2>Se connecter </h2>  </center>
+     
+        </div>
+               <center> <p class="identifiant" >Identifiez-vous</p> 
+        <div class="input">
+                        <input type="text" placeholder="identifiant" required="required" id="identifiantAccueil">
+                        <input type="password" placeholder="mot de passe" required="required" id="modepasseAccueil">
                 <div>
-                    <p>Lundi :  11h - 22h </p>
-                    <p>Mardi : 11h - 22h </p>
-                    <p>Mercredi : 11h - 22h</p>
-                    <p>Jeudi : 11h - 22h</p>
-                    <p>Vendredi : 11h - 23h00</p>
-                    <p>Samedi : 11h - 23h00</p>
+                        <button type="submit">se connecter</button>
                 </div>
-                
-                </div>
-                <div class="adresse" >
-                    <div>
-                        <h2>Adresse</h2>
-                    </div>
-                    <div> 
-                        <p>54 Boulevard Laveran</p>
-                        <p>13014 Marseille</p>
-                    </div>
-                </div>
-                
+                <p>Je n'ai pas de compte</p>
+                <button type="button">s'inscrire</button>
+        </div></center>
+
+       
     </main>
 
     <footer>
-        <div class="footer">
-            <p>Copyright © 2023 Manger Bouger. Tous droits au but.</p>
-                <img width="45px" height="30px" src="./assets/img/logo-facebook.jpeg" alt="logo-facebook">
-                <img width="45px" height="30px" src="./assets/img/logo-snap.jpg" alt="logo-snap">
-                <img width="45px" height="30px" src="./assets/img/logo-instagram.jpg" alt="logo-instagram">
-        </div>
+                <div class="footer">
+                    <p>Copyright © 2023 Manger Bouger. Tous droits au but.</p>
+                        <img width="45px" height="30px" src="./assets/img/logo-facebook.jpeg" alt="logo-facebook">
+                        <img width="45px" height="30px" src="./assets/img/logo-snap.jpg" alt="logo-snap">
+                        <img width="45px" height="30px" src="./assets/img/logo-instagram.jpg" alt="logo-instagram">
+                </div>
     </footer>
 
 </body>
